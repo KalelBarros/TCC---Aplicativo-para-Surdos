@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botao_teclado"
+        android:icon="@drawable/icon_teclado"
+        android:title="Teclado"/>
+    <item
+        android:id="@+id/botao_atividades"
+        android:icon="@drawable/icon_livro"
+        android:title="Atividades"/>
+    <item
+        android:id="@+id/botao_emergencia"
+        android:icon="@drawable/icon_sirene"
+        android:title="Emergência"/>
+</menu>

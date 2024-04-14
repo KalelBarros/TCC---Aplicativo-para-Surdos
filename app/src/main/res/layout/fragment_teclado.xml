@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TecladoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/background"
+            android:textSize="35sp"
+            />
+
+        <Button
+            android:id="@+id/bt_converter"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/icon_fala"
+            />
+
+        <EditText
+            android:id="@+id/caixa_texto"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="-75dp"
+            android:focusable="false"
+            android:hint=" Digite aqui.."
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="30dp">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bt_1"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_1"/>
+
+            <ImageView
+                android:id="@+id/bt_2"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_2"/>
+
+            <ImageView
+                android:id="@+id/bt_3"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_3"/>
+
+            <ImageView
+                android:id="@+id/bt_4"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_4"/>
+
+            <ImageView
+                android:id="@+id/bt_5"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_5"/>
+
+            <ImageView
+                android:id="@+id/bt_6"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_6"/>
+
+            <ImageView
+                android:id="@+id/bt_7"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_7"/>
+
+            <ImageView
+                android:id="@+id/bt_8"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_8"/>
+
+            <ImageView
+                android:id="@+id/bt_9"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_9"/>
+
+            <ImageView
+                android:id="@+id/bt_0"
+                style="@style/Operators_Numbers"
+                android:src="@drawable/img_0"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/letra_q"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_q"/>
+
+            <ImageView
+                android:id="@+id/letra_w"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_w"/>
+
+            <ImageView
+                android:id="@+id/letra_e"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_e"/>
+
+            <ImageView
+                android:id="@+id/letra_r"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_r"/>
+
+            <ImageView
+                android:id="@+id/letra_t"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_t"/>
+
+            <ImageView
+                android:id="@+id/letra_y"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_y"/>
+
+            <ImageView
+                android:id="@+id/letra_u"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_u"/>
+
+            <ImageView
+                android:id="@+id/letra_i"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_i"/>
+
+            <ImageView
+                android:id="@+id/letra_o"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_o"/>
+
+            <ImageView
+                android:id="@+id/letra_p"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_p"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/letra_a"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_a" />
+
+            <ImageView
+                android:id="@+id/letra_s"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_s"/>
+
+            <ImageView
+                android:id="@+id/letra_d"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_d"/>
+
+            <ImageView
+                android:id="@+id/letra_f"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_f"/>
+
+            <ImageView
+                android:id="@+id/letra_g"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_g"/>
+
+            <ImageView
+                android:id="@+id/letra_h"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_h"/>
+
+            <ImageView
+                android:id="@+id/letra_j"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_j"/>
+
+            <ImageView
+                android:id="@+id/letra_k"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_k"/>
+
+            <ImageView
+                android:id="@+id/letra_l"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_l"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/letra_maiuscula"
+                style="@style/Operators_Numbers"
+                android:layout_weight="1.4"
+                android:scaleType="center"
+                android:src="@drawable/img_maiuscula"/>
+
+            <ImageView
+                android:id="@+id/letra_z"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_z"/>
+
+            <ImageView
+                android:id="@+id/letra_x"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_x"/>
+
+            <ImageView
+                android:id="@+id/letra_c"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_c"/>
+
+            <ImageView
+                android:id="@+id/letra_v"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_v"/>
+
+            <ImageView
+                android:id="@+id/letra_b"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_b"/>
+
+            <ImageView
+                android:id="@+id/letra_n"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_n"/>
+
+            <ImageView
+                android:id="@+id/letra_m"
+                style="@style/Operators_Letras"
+                android:src="@drawable/img_m"/>
+
+            <Button
+                android:id="@+id/backspace"
+                style="@style/Operators_Numbers"
+                android:layout_weight="1.4"
+                android:text="⌫"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/letras_simbolos"
+                style="@style/Operators_Numbers"
+                android:layout_weight="1.2"
+                android:text="123"/>
+
+
+            <Button
+                android:id="@+id/virgula"
+                style="@style/Operators_Numbers"
+                android:text=","/>
+
+            <Button
+                android:id="@+id/bt_espaco"
+                style="@style/Operators_Numbers"
+                android:text="|--------|"
+                android:layout_weight="3" />
+
+            <Button
+                android:id="@+id/bt_ponto"
+                style="@style/Operators_Numbers"
+                android:text="."/>
+
+            <Button
+                android:id="@+id/bt_enter"
+                style="@style/Operators_Numbers"
+                android:text="ir"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
