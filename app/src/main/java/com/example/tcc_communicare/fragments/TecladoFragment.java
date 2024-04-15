@@ -46,6 +46,7 @@ public class TecladoFragment extends Fragment {
         resultTextView = view.findViewById(R.id.txt_resultado);
         caixa_texto = view.findViewById(R.id.caixa_texto);
         converte = view.findViewById(R.id.bt_converter);
+        caixa_texto.setShowSoftInputOnFocus(false);
 
         /* Números do Teclado */
         ImageView numero_1 = view.findViewById(R.id.bt_1);
@@ -814,27 +815,22 @@ public class TecladoFragment extends Fragment {
 
         backspace.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                int cursorPos = caixa_texto.getSelectionStart();
+                String string = caixa_texto.getText().toString();
 
-                TextView result = view.findViewById(R.id.txt_resultado);
-                String string = result.getText().toString();
+                if (!string.isEmpty() && cursorPos > 0 && cursorPos <= string.length()) {
+                    // Remove o caractere na posição do cursor
+                    String txtExpressao = string.substring(0, cursorPos - 1) + string.substring(cursorPos);
 
-                EditText caixa = view.findViewById(R.id.caixa_texto);
-                String stringCaixa = caixa.getText().toString();
+                    // Define o texto atualizado no EditText
+                    caixa_texto.setText(txtExpressao);
 
-                if (!string.isEmpty() && !stringCaixa.isEmpty()) {
-
-                    byte var0 = 0; /* Variavel do tipo byte pra na cracchar o app*/
-                    int var1 = string.length() - 1;
-                    int varCaixa = stringCaixa.length() - 1;
-
-                    String displayTextView = string.substring(var0, var1);
-                    result.setText(displayTextView);
-                    String digiteEditText = stringCaixa.substring(var0, varCaixa);
-                    caixa.setText(digiteEditText);
+                    // Move o cursor para a posição correta
+                    caixa_texto.setSelection(cursorPos - 1);
+                    resultTextView.setText(caixa_texto.getText());
                 }
             }
-
         });
 
         letra_maiuscula.setOnClickListener(new View.OnClickListener() {

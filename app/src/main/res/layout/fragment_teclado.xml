@@ -37,7 +37,6 @@
             android:layout_height="70dp"
             android:layout_marginRight="80dp"
             android:layout_marginTop="-75dp"
-            android:focusable="false"
             android:hint=" Digite aqui.."
             android:textColorHint="@color/black"
             android:textColor="@color/black"
@@ -89,7 +88,8 @@
             <ImageView
                 android:id="@+id/bt_8"
                 style="@style/Operators_Numbers"
-                android:src="@drawable/img_8"/>
+                android:padding="5dp"
+                android:src="@drawable/img_8_2"/>
 
             <ImageView
                 android:id="@+id/bt_9"
@@ -226,7 +226,7 @@
             <ImageView
                 android:id="@+id/letra_maiuscula"
                 style="@style/Operators_Numbers"
-                android:layout_weight="1.4"
+                android:layout_weight="1.5"
                 android:scaleType="center"
                 android:src="@drawable/img_maiuscula"/>
 
@@ -265,10 +265,11 @@
                 style="@style/Operators_Letras"
                 android:src="@drawable/img_m"/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/backspace"
                 style="@style/Operators_Numbers"
-                android:layout_weight="1.4"
+                android:layout_weight="1.5"
+                android:padding="5dp"
                 android:text="⌫"/>
 
 
@@ -280,32 +281,36 @@
             android:layout_weight="0.5"
             android:orientation="horizontal">
 
-            <Button
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/letras_simbolos"
                 style="@style/Operators_Numbers"
-                android:layout_weight="1.2"
-                android:text="123"/>
+                android:layout_weight="1.4"
+                android:padding="5dp"
+                android:text="123" />
 
-
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/virgula"
                 style="@style/Operators_Numbers"
+                android:padding="5dp"
                 android:text=","/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bt_espaco"
                 style="@style/Operators_Numbers"
-                android:text="|--------|"
+                android:text="          "
                 android:layout_weight="3" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bt_ponto"
                 style="@style/Operators_Numbers"
+                android:padding="5dp"
                 android:text="."/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bt_enter"
                 style="@style/Operators_Numbers"
+                android:layout_weight="1.5"
                 android:text="ir"/>
 
         </LinearLayout>
