@@ -6,9 +6,9 @@
         android:icon="@drawable/icon_teclado"
         android:title="Teclado"/>
     <item
-        android:id="@+id/botao_atividades"
+        android:id="@+id/botao_aprendizado"
         android:icon="@drawable/icon_livro"
-        android:title="Atividades"/>
+        android:title="Aprendizado"/>
     <item
         android:id="@+id/botao_emergencia"
         android:icon="@drawable/icon_sirene"
